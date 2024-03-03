@@ -97,3 +97,13 @@ void circulation()
 label:
 	cout << "程序结束" << endl;
 }
+
+void localAndGlobal(int i)
+{
+	// 局部变量和全局变量
+	cout << "全局变量i = " << i << endl;
+	while (i <5)
+	{
+		cout << "i = " << i++ << endl;
+	}
+}

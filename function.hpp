@@ -9,3 +9,5 @@ void switchStatement();
 void jump();
 // 循环
 void circulation();
+// 局部变量和全局变量
+void localAndGlobal(int i);
