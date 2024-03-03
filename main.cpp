@@ -2,6 +2,13 @@
 
 using namespace std;
 
-int main() {
+int main() 
+{
+	//assign();
+	//ternaryOperator();
+	//switchStatement();
+	//jump();
+	circulation();
 
+	return 0;   
 }
