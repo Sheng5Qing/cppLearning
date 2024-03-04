@@ -9,9 +9,12 @@ int main()
 	//switchStatement();
 	//jump();
 	//circulation();
-	int i(0);
+
+	/*int i(0);
 	localAndGlobal(i);
-	cout << "全局变量i = " << i << endl;
+	cout << "全局变量i = " << i << endl;*/
+
+	escapeCharacter();
 
 	return 0;   
 }

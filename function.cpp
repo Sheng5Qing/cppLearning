@@ -107,3 +107,12 @@ void localAndGlobal(int i)
 		cout << "i = " << i++ << endl;
 	}
 }
+
+void escapeCharacter()
+{
+	//\t水平制表，对齐
+	//输出"需要转义
+	cout<<"1\t\"Hello World!\""<<endl;
+	cout<<"01\t\"Hello World!\""<<endl;
+	cout<<"001\t\"Hello World!\""<<endl;
+}

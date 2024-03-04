@@ -11,3 +11,5 @@ void jump();
 void circulation();
 // 局部变量和全局变量
 void localAndGlobal(int i);
+//转义字符
+void escapeCharacter();
