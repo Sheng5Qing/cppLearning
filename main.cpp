@@ -14,7 +14,8 @@ int main()
 	localAndGlobal(i);
 	cout << "全局变量i = " << i << endl;*/
 
-	escapeCharacter();
+	//escapeCharacter();
+	rawString();
 
 	return 0;   
 }

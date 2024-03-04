@@ -116,3 +116,27 @@ void escapeCharacter()
 	cout<<"01\t\"Hello World!\""<<endl;
 	cout<<"001\t\"Hello World!\""<<endl;
 }
+
+void rawString() {
+	//使用转义方法
+	string path = "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community";
+	cout << "path is: " << path << endl;	
+
+	//使用C++原始字面量
+	string path1 = R"(C:\Program Files\Microsoft Visual Studio\2022\Community)";
+	cout << "path1 is: " << path1 << endl;
+	
+	//为了提高可读性，原始字面量前后可加标签
+	string path2 = R"explain(C:\Program Files\Microsoft Visual Studio\2022\Community)explain";
+	cout << "path2 is: " << path2 << endl;
+	//原始字面量处理多行字符串
+	string str = R"(
+        <no>0001</no>
+        <name>西施</name>
+        <sc>火树银花</sc>
+        <yz>沉鱼</yz>
+        <age>23</age>
+        <weight>48.5</weight>
+        <height>170</height>)";
+	cout << str << endl;
+}

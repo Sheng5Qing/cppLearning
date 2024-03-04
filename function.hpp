@@ -13,3 +13,5 @@ void circulation();
 void localAndGlobal(int i);
 //转义字符
 void escapeCharacter();
+//C++原始字面量
+void rawString();
