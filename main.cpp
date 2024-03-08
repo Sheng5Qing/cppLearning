@@ -1,3 +1,4 @@
+#include <iostream>
 #include "function.hpp"
 
 using namespace std;
@@ -15,7 +16,8 @@ int main()
 	cout << "全局变量i = " << i << endl;*/
 
 	//escapeCharacter();
-	rawString();
+	//rawString();
+	typedefAlias();
 
 	return 0;   
 }

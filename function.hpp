@@ -1,4 +1,3 @@
-#include <iostream>
 // C++ 11初始化赋值
 void assign();
 // 三目运算符
@@ -15,3 +14,5 @@ void localAndGlobal(int i);
 void escapeCharacter();
 //C++原始字面量
 void rawString();
+//typedef别名
+void typedefAlias();

@@ -1,4 +1,5 @@
 #include"function.hpp"
+#include <iostream>
 using namespace std;
 
 void assign() 
@@ -139,4 +140,15 @@ void rawString() {
         <weight>48.5</weight>
         <height>170</height>)";
 	cout << str << endl;
+}
+
+void typedefAlias()
+{
+	//typedef 原数据类型名 别名;
+	typedef short int16_t;
+	//C++11中，可以用using 别名=原数据类型名;
+	using int32_t = int;
+
+	cout << "int16_t: " << sizeof(int16_t) << endl;
+	cout << "int32_t: " << sizeof(int32_t) << endl;
 }
