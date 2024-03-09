@@ -152,3 +152,92 @@ void typedefAlias()
 	cout << "int16_t: " << sizeof(int16_t) << endl;
 	cout << "int32_t: " << sizeof(int32_t) << endl;
 }
+
+void pointer()
+{
+	int a;
+	char b;
+	bool c;
+	string d;
+	//对指针赋值
+	int* ptr_a = &a;
+	char* ptr_b = &b;
+	bool* ptr_c = &c;
+	string* ptr_d = &d;
+
+	cout << "指针地址:" << endl;
+	//cout取地址输出字符串,有些可能输出“烫烫烫烫...
+	cout << "a的地址是：" << &a << endl;
+	cout << "b的地址是：" << &b << endl;
+	cout << "c的地址是：" << &c << endl;
+	cout << "d的地址是：" << &d << endl;
+	//以十六进制输出
+	cout << "a的地址是：" << (void*)&a << endl;
+	cout << "b的地址是：" << (void*)&b << endl;
+    cout << "c的地址是：" << (void*)&c << endl;
+	cout << "d的地址是：" << (void*)&d << endl;
+	//以十进制输出,类型转换为long long，因为int型地址可能超出范围
+	cout << "a的地址是：" << (long long)&a << endl;
+	cout << "b的地址是：" << (long long)&b << endl;
+	cout << "c的地址是：" << (long long)&c << endl;
+	cout << "d的地址是：" << (long long)&d << endl;
+
+	//输出指针内容，为各个变量的地址
+	cout << "指针内容:" << endl;
+	cout << "ptr_a的内容是：" << (long long)ptr_a << endl;
+	cout << "ptr_b的内容是：" << (long long)ptr_b << endl;
+	cout << "ptr_c的内容是：" << (long long)ptr_c << endl;
+	cout << "ptr_d的内容是：" << (long long)ptr_d << endl;
+
+
+	//回顾一下各类型的大小
+	cout << "int: " << sizeof(int) << endl;
+	cout << "char: " << sizeof(char) << endl;
+	cout << "bool: " << sizeof(bool) << endl;
+	cout << "string: " << sizeof(string) << endl;
+	//指针也是变量，占用内存空间都是8个字节
+	cout << "int*指针占用空间: " << sizeof(ptr_a) << endl;
+	cout << "char*指针占用空间: " << sizeof(ptr_b) << endl;
+	cout << "bool*指针占用空间: " << sizeof(ptr_c) << endl;
+	cout << "string*指针占用空间: " << sizeof(ptr_d) << endl;
+
+	//解引用运算符
+	int x = 10;
+	int* ptr_x = &x;
+	cout << "x的值是：" << x << endl;
+	cout << "*ptr_x的值是：" << *ptr_x << endl;
+
+	pointer(ptr_x);
+	cout << "现在x的值是：" << x << endl;
+	pointer(&x);
+	cout << "现在x的值是：" << x << endl;
+}
+
+void pointer(int* a)
+{
+	*a += 1;
+}
+
+void constPointer()
+{	
+	//指针常量
+	//语法：const 数据类型 *指针名;
+	//不能通过解引用的方法修改内存地址中的值，但用原始的变量名是可以修改
+	//指向的变量（对象）可以改变
+	//一般用于修饰函数的形参，表示不希望在函数里修改内存地址中的值
+	//如果用于形参，虽然指向的对象可以改变，但这么做没有任何意义
+	//如果形参的值不需要改变，建议加上const修饰，程序可读性更好。
+
+	//常量指针
+	//语法：数据类型 *const 指针名;
+	//指向的变量（对象）不可改变
+	//在定义的同时必须初始化，否则没有意义。
+	//可以通过解引用的方法修改内存地址中的值。
+	//C++编译器把指针常量做了一些特别的处理，改头换面之后，有一个新的名字，叫引用。
+
+	//常指针常量
+	//语法：const 数据类型 *const 指针名;
+	//指向的变量（对象）不可改变，不能通过解引用的方法修改内存地址中的值
+	//
+	
+}

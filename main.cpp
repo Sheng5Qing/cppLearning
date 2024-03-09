@@ -17,7 +17,8 @@ int main()
 
 	//escapeCharacter();
 	//rawString();
-	typedefAlias();
+	//typedefAlias();
+	pointer();
 
 	return 0;   
 }

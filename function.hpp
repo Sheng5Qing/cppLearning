@@ -16,3 +16,9 @@ void escapeCharacter();
 void rawString();
 //typedef别名
 void typedefAlias();
+//指针
+void pointer();
+//指针传参
+void pointer(int* a);
+//常量指针与指针常量
+void constPointer();
