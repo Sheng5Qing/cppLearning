@@ -18,7 +18,14 @@ int main()
 	//escapeCharacter();
 	//rawString();
 	//typedefAlias();
-	pointer();
+	//pointer();
+	
+	/*int a = 10;
+	voidKey("a", &a);
+	string str = "hello";
+	voidStringValue("str", &str); */ 
+
+	baseDynamicMemory();
 
 	return 0;   
 }

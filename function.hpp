@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 // C++ 11初始化赋值
 void assign();
 // 三目运算符
@@ -22,3 +25,9 @@ void pointer();
 void pointer(int* a);
 //常量指针与指针常量
 void constPointer();
+//void关键字
+void voidKey(string varname, void* v);
+//不能对void *指针直接解引用（需要转换成其它类型的指针）
+void voidStringValue(string varname, void* v);
+//动态分配内存
+void baseDynamicMemory();
