@@ -13,7 +13,7 @@ int main()
 
 	/*int i(0);
 	localAndGlobal(i);
-	cout << "全局变量i = " << i << endl;*/
+	cout << "鍏ㄥ眬鍙橀噺i = " << i << endl;*/
 
 	//escapeCharacter();
 	//rawString();

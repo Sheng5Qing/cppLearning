@@ -1,33 +1,33 @@
 #include <iostream>
 using namespace std;
 
-// C++ 11³õÊ¼»¯¸³Öµ
+// C++ 11åˆå§‹åŒ–èµ‹å€¼
 void assign();
-// ÈıÄ¿ÔËËã·û
+// ä¸‰ç›®è¿ç®—ç¬¦
 void ternaryOperator();
-// switchÓï¾ä
+// switchè¯­å¥
 void switchStatement();
-// breakºÍcontinueµÄÇø±ğ
+// breakå’Œcontinueçš„åŒºåˆ«
 void jump();
-// Ñ­»·
+// å¾ªç¯
 void circulation();
-// ¾Ö²¿±äÁ¿ºÍÈ«¾Ö±äÁ¿
+// å±€éƒ¨å˜é‡å’Œå…¨å±€å˜é‡
 void localAndGlobal(int i);
-//×ªÒå×Ö·û
+//è½¬ä¹‰å­—ç¬¦
 void escapeCharacter();
-//C++Ô­Ê¼×ÖÃæÁ¿
+//C++åŸå§‹å­—é¢é‡
 void rawString();
-//typedef±ğÃû
+//typedefåˆ«å
 void typedefAlias();
-//Ö¸Õë
+//æŒ‡é’ˆ
 void pointer();
-//Ö¸Õë´«²Î
+//æŒ‡é’ˆä¼ å‚
 void pointer(int* a);
-//³£Á¿Ö¸ÕëÓëÖ¸Õë³£Á¿
+//å¸¸é‡æŒ‡é’ˆä¸æŒ‡é’ˆå¸¸é‡
 void constPointer();
-//void¹Ø¼ü×Ö
+//voidå…³é”®å­—
 void voidKey(string varname, void* v);
-//²»ÄÜ¶Ôvoid *Ö¸ÕëÖ±½Ó½âÒıÓÃ£¨ĞèÒª×ª»»³ÉÆäËüÀàĞÍµÄÖ¸Õë£©
+//ä¸èƒ½å¯¹void *æŒ‡é’ˆç›´æ¥è§£å¼•ç”¨ï¼ˆéœ€è¦è½¬æ¢æˆå…¶å®ƒç±»å‹çš„æŒ‡é’ˆï¼‰
 void voidStringValue(string varname, void* v);
-//¶¯Ì¬·ÖÅäÄÚ´æ
+//åŠ¨æ€åˆ†é…å†…å­˜
 void baseDynamicMemory();
